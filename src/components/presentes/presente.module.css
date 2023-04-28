@@ -1,0 +1,31 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.tampa{
+    width: 90px;
+    height: 15px;
+    background-color: crimson;
+
+}
+.corpo{
+    width: 80px;
+    height: 75px;
+    background-color: rgb(178, 7, 41);
+}
+
+.fita1{
+    width: 80px;
+    height: 15px;
+    background-color: rgb(53, 230, 17);
+    position: absolute;
+}
+.fita2{
+    width: 15px;
+    height: 90px;
+    background-color: rgb(53, 230, 17);
+    position: absolute;
+}
