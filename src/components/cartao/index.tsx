@@ -1,7 +1,6 @@
-import { Children } from "react";
 
 interface ICartaoProps{
-    Title:string;
+    Title?:string;
     children?:React.ReactNode
 
 }
