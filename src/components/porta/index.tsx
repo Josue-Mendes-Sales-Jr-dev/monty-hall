@@ -1,13 +1,17 @@
 import PortaModel from "@/src/model/porta";
 import styles from "./presente.module.css"
+import { Presente } from "../presentes";
 
 interface IPortaProps{
     value: PortaModel;
+    numeroP:number;
     onChangee:(novaPorta: PortaModel)=>void;
 }
 export const Porta=(props:IPortaProps)=>{
     const porta=props.value
+    const n=props.numeroP
     const selected= props.value.selecionada? styles.selecionada : ""
+
    const abrir=(e:any)=>{
     e.stopPropagation()
     props.onChangee(porta.abrir())
@@ -19,7 +23,7 @@ export const Porta=(props:IPortaProps)=>{
         return(
             <>  
                 <div className={styles.box}>
-                <div className={styles.numero}>3</div>
+                <div className={styles.numero}>{n}</div>
                 <div className={styles.macaneta}  onClick={abrir}></div>
                 </div>
            
@@ -32,7 +36,10 @@ export const Porta=(props:IPortaProps)=>{
         <>
         <div className={styles.area} onClick={alternarSelecao} >
            <div className={`${styles.estrutura} ${selected}`} >
-            {porta.aberta ? false : renderiza()}
+            {
+             porta.fechada ?
+             renderiza(): porta.temPresente ? <Presente/> : false
+             }
             </div>
             <div className={styles.chao}></div>
         </div>
