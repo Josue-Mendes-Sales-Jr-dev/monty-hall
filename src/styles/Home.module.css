@@ -1,9 +1,59 @@
 .main{
-  width: 100vw;
-  height: 100vh;
+  width: 400px;
+  height: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
+  background-color: rgb(209, 196, 221);
+}
+
+.Qd1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.7rem;
+  padding:0 3rem ;
+  word-wrap: break-word;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(7, 121, 47);
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  color: white;
+}
+.Qd2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+.Qd3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+.Qd4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(207, 11, 11);
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  color: white;
+}
+
+.Qd4 a{
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding:  4.5rem 2.6rem;
+
 }
