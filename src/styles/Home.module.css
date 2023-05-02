@@ -1,10 +1,21 @@
+
+
+.box{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://awari.com.br/wp-content/uploads/2023/03/Monty-Hall.png);
+}
 .main{
   width: 400px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgb(209, 196, 221);
+  background-color: rgb(64, 49, 1);
+  
 }
 
 .Qd1{
